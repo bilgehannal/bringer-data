@@ -1,0 +1,33 @@
+pipeline {
+	agent {
+		label "master"
+	}
+
+    libraries {
+        lib('jenkinsfile-sharedlibraries@master')
+    }
+
+	options {
+		timeout(time: 30, unit: 'MINUTES')
+		buildDiscarder(logRotator(daysToKeepStr: '10', artifactDaysToKeepStr: '7'))
+		timestamps()
+		disableConcurrentBuilds()
+		skipDefaultCheckout()
+	}
+
+	parameters {
+        string(defaultValue: 'x', description: 'x', name: 'CHANNEL')
+        text(defaultValue: 'x' , description: 'x', name: 'MESSAGE')
+        choice(name: 'COLOR', choices: ['blue', 'orange', 'pink', 'red', 'green', 'purple'], description: 'good -> green, danger -> red')
+	}
+
+	stages {
+		stage('Stage Name') {
+            steps {
+                script {
+                    echo 'Hello World'
+				}
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project_name
+  labels:
+    app: project_name
+spec:
+  selector:
+    matchLabels:
+      app: project_name
+  replicas: 1
+  revisionHistoryLimit: 0
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: project_name
+    spec:
+      containers:
+      - name: project_name
+        image: docker-image
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DEPLOY_TYPE
+          value: __DEPLOY_TYPE__
+        - name: XMS
+          value: 256M
+        - name: XMX
+          value: 512M
+        - name: DEPLOY_ENV
+          value: KUBERNETES
+        - name: PODNAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        readinessProbe:
+          httpGet:
+            path: /_hc
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          failureThreshold: 30
+        resources:
+          limits:
+            memory: 1152Mi
+        volumeMounts:
+        - mountPath: /var/log/java
+          name: project_name-claim0
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 10
+      volumes:
+      - name: project_name-claim0
+        emptyDir: {}

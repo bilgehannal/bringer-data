@@ -1,7 +1,31 @@
-name: 1.txt
+name: k8s-external-service.txt
 labels: yaml k8s kubernetes external service svc
 description: Example kubernetes external service description yaml
 ---
-name: 2.txt
+name: k8s-exec-container.txt
 labels: k8s kubectl command cli pod connect bash sh ssh exec
 description: ssh connection to pod with kubectl
+---
+name: k8s-example-deployment-microservice.txt
+labels: k8s kubernetes deployment template yaml microservice app example
+description: k8s example deployment yaml
+---
+name: k8s-example-svc.txt
+labels: k8s kubernetes service svc example template yaml
+description: Example k8s svc yaml
+---
+name: sed_commands.txt
+labels: sed command commands replace mac linux string with
+description: Replace commands for sed
+---
+name: basic-jenkinsfile.txt
+labels: basic jenkinsfile groovy pipeline template
+description: Basic Jenkinsfile template
+---
+name: bash-if-else.txt
+labels: basic bash script sh if else elif statement syntax example
+description: Basic if else example for bash script
+---
+name: base64-sh.txt
+labels: base64 encode decode sh bash terminal
+description: basic base64 commands

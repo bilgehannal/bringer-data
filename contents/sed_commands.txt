@@ -1,0 +1,2 @@
+linux: sed 's/foo/bar/g' hello.txt
+mac: sed -i '' "s/%PROJECT_NAME%/abc/g" abc.yaml

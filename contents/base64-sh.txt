@@ -1,0 +1,4 @@
+Encode string : echo 'Bilgehan' | base64
+Decode string : echo 'QmlsZ2VoYW4K' | base64 --decode
+Encode file : base64 sample.txt
+Decode file : base64 -d encodedData.txt
