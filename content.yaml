@@ -1,5 +1,5 @@
 name: k8s-external-service.txt
-labels: yaml k8s kubernetes external service svc example template yml
+labels: k8s kubernetes service svc example template yaml yml microservice external
 description: Example kubernetes external service description yaml
 ---
 name: k8s-exec-container.txt
@@ -11,7 +11,7 @@ labels: k8s kubernetes deployment template yaml microservice app example
 description: k8s example deployment yaml
 ---
 name: k8s-example-svc.txt
-labels: k8s kubernetes service svc example template yaml yml
+labels: k8s kubernetes service svc example template yaml yml microservice
 description: Example k8s svc yaml
 ---
 name: sed_commands.txt
