@@ -11,7 +11,7 @@ labels: k8s kubernetes deployment template yaml microservice app example
 description: k8s example deployment yaml
 ---
 name: k8s-example-svc.txt
-labels: k8s kubernetes service svc example template yaml
+labels: k8s kubernetes service svc example template yaml yml microservice
 description: Example k8s svc yaml
 ---
 name: sed_commands.txt
