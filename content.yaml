@@ -1,5 +1,5 @@
 name: k8s-external-service.txt
-labels: yaml k8s kubernetes external service svc
+labels: yaml k8s kubernetes external service svc example template yml
 description: Example kubernetes external service description yaml
 ---
 name: k8s-exec-container.txt
