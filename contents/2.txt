@@ -1,0 +1,1 @@
+kubectl exec --namespace=$namespace $pod -c $container -it bash
