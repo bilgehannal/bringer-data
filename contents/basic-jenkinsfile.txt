@@ -3,9 +3,9 @@ pipeline {
 		label "master"
 	}
 
-    libraries {
-        lib('jenkinsfile-sharedlibraries@master')
-    }
+	libraries {
+		lib('jenkinsfile-sharedlibraries@master')
+	}
 
 	options {
 		timeout(time: 30, unit: 'MINUTES')
@@ -16,18 +16,18 @@ pipeline {
 	}
 
 	parameters {
-        string(defaultValue: 'x', description: 'x', name: 'CHANNEL')
-        text(defaultValue: 'x' , description: 'x', name: 'MESSAGE')
-        choice(name: 'COLOR', choices: ['blue', 'orange', 'pink', 'red', 'green', 'purple'], description: 'good -> green, danger -> red')
+		string(defaultValue: 'x', description: 'x', name: 'CHANNEL')
+		text(defaultValue: 'x' , description: 'x', name: 'MESSAGE')
+		choice(name: 'COLOR', choices: ['blue', 'orange', 'pink', 'red', 'green', 'purple'], description: 'good -> green, danger -> red')
 	}
 
 	stages {
 		stage('Stage Name') {
-            steps {
-                script {
-                    echo 'Hello World'
+            		steps {
+                		script {
+                    			echo 'Hello World'
 				}
-            }
-        }
-    }
+            		}
+        	}
+    	}
 }
