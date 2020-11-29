@@ -29,3 +29,7 @@ description: Basic if else example for bash script
 name: base64-sh.txt
 labels: base64 encode decode sh bash terminal
 description: basic base64 commands
+---
+name: bash-case.txt
+labels: bash sh switch case example template
+description: bash script switch case example

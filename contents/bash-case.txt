@@ -1,0 +1,21 @@
+while :
+do
+    read INPUT_STRING
+    case $INPUT_STRING in
+        1)
+            echo "inside of 1"
+            break
+            ;;
+        2)
+            echo "inside of 2"
+            break
+            ;;
+        3)
+            echo "inside of 3"
+            break
+            ;;
+        *)
+            echo "None of them"
+            ;;
+esac
+done
