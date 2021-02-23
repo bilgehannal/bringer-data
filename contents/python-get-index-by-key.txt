@@ -1,0 +1,16 @@
+elements = [
+    {
+        'id': 1,
+        'title': 'Example Account 1'
+    },
+    {
+        'id': 2,
+        'title': 'Gow to get this one?'
+    },
+    {
+        'id': 3,
+        'title': 'Example Account 3'
+    },
+]
+
+-> [item for item in elements if item.get('id')==2]

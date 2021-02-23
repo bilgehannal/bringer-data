@@ -33,3 +33,7 @@ description: basic base64 commands
 name: bash-case.txt
 labels: bash sh switch case example template
 description: bash script switch case example
+---
+name: python-get-index-by-key.txt
+labels: python get index by key object object key element
+description: Getting the index of element which has the spesific value 
