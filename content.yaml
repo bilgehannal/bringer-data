@@ -37,3 +37,7 @@ description: bash script switch case example
 name: python-get-index-by-key.txt
 labels: python get index by key object object key element
 description: Getting the index of element which has the spesific value 
+---
+name: jenkins-catch-error.txt
+labels: jenkins skip failed job catch error show success skip error
+description: jenkins skip failed job catch error 
