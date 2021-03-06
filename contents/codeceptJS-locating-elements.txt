@@ -1,0 +1,10 @@
+I.seeElement('.user'); // element with CSS class user
+I.seeElement('//button[contains(., "press me")]'); // button
+
+I.seeElement({css: 'div.user'});
+I.seeElement({xpath: '//div[@class=user]'});
+
+// locate form element by name
+I.seeElement({name: 'password'});
+// locate element by React component and props
+I.seeElement({react: 'user-profile', props: {name: 'davert'}});
