@@ -1,0 +1,8 @@
+BeforeSuite(({ I }) => {
+  I.syncDown('testfolder');
+});
+
+AfterSuite(({ I }) => {
+  I.syncUp('testfolder');
+  I.clearDir('testfolder');
+});

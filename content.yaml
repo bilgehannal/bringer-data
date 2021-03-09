@@ -44,4 +44,20 @@ description: jenkins skip failed job catch error
 ---
 name: codeceptJS-locating-elements.txt
 labels: codeceptjs locating element finding getting find locate get by name class id xpath css
-description: Locating elements for codeceptJS
+description: Locating elements for 
+---
+name: codeceptJS-before-after-suite.txt
+labels: codeceptjs before after suite teardown
+description: Before and after suite for codeceptJS
+---
+name: codeceptJS-tryto.txt
+labels: codeceptjs tryTo try
+description: Using of tryTo
+---
+name: codeceptjs-multipple-session.txt
+labels: codeceptjs multiple sessions session
+description: Using of Session
+---
+name: nodeJSMultiClassExtend.txt
+labels: nodejs node extend multi multiple inheritence class
+description: Extending multipple classes
