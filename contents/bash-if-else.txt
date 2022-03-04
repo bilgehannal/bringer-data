@@ -13,6 +13,12 @@ else
   echo "The variable is less than 10."
 fi
 
+if [ -n "$1" ]; then
+  echo "You supplied the first parameter!"
+else
+  echo "First parameter not supplied."
+fi
+
 -n VAR - True if the length of VAR is greater than zero.
 -z VAR - True if the VAR is empty.
 STRING1 = STRING2 - True if STRING1 and STRING2 are equal.
